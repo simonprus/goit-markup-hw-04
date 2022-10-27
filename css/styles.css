@@ -180,6 +180,9 @@ a:hover {
     background-color: var(--background-grey);
     color: var(--main-white);
 }
+.order-list {
+    background-image: url(../images/Img-background.jpg) ;
+}
 
 /* LOREM ON MAIN PAGE */
 
