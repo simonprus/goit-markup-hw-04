@@ -8,6 +8,7 @@
     --main-silver: #757575;
     --border: rgba(236, 236, 236, 1);
     --icon: #AFB1B8;
+    --border-portfolio: #EEEEEE
 
 }
 body {
@@ -75,11 +76,10 @@ a:hover {
     display: flex;
     gap: 50px;
 }
-.tel-icon::before {
-    background-image: url(../images/icons.svg/symbol-defs.svg#icon-smartphone-icon);
-    height: 16px;
-    width: 10px;
-    
+/* ICON HEADER */
+
+.mail-icon::after {
+    background-image: url('../images/icons.svg/mail-svgrepo-com.svg');
 }
 
 /* HEADER LINE BORDER */
@@ -148,6 +148,7 @@ a:hover {
     line-height: 36px;
     letter-spacing: 0.06em;
     color: var(--black-main);
+    margin: 0px 24px;
 }
 
 .product-text {
@@ -156,6 +157,14 @@ a:hover {
     line-height: 30px;
     letter-spacing: 0.03em;
     color: var(--main-silver);
+    margin: 0px 24px 20px 24px;
+}
+.product-list {
+    border: 1px solid var(--border-portfolio);
+    margin: 30px 0;
+}
+.product-list:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);;
 }
 
 /*FOOTER*/
@@ -165,9 +174,20 @@ a:hover {
     background-color: var(--background-grey);
     margin: 0px 0px 0px 0px;
     color: var(--main-white);
+    display: flex;
 }
 .white-text {
     color: var(--main-white);
+}
+
+.footer-text {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+}
+
+.footer-sm {
+    margin: 0px 0 0 72px;
 }
 
 /* MAIN PAGE ONLY */
