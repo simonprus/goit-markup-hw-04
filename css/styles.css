@@ -7,6 +7,8 @@
     --second-white: #F5F4FA;
     --main-silver: #757575;
     --border: rgba(236, 236, 236, 1);
+    --icon: #AFB1B8;
+
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -72,7 +74,12 @@ a:hover {
 .nav-contact {
     display: flex;
     gap: 50px;
-
+}
+.tel-icon::before {
+    background-image: url(../images/icons.svg/symbol-defs.svg#icon-smartphone-icon);
+    height: 16px;
+    width: 10px;
+    
 }
 
 /* HEADER LINE BORDER */
@@ -206,6 +213,7 @@ a:hover {
     justify-content: center;
     gap: 30px;
     margin: 94px 0px;
+    padding: 0;
 }
 
 /* SECTION: CZYM SIE ZAJMUJEMY */
@@ -250,14 +258,59 @@ a:hover {
 .our-team {
     margin: 188px 0 50px 0;
 }
+.our-client {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 
+/* STYLIZACJE IKON */
 
+.icon {
+    width: 67px;
+    height: 70px;
+    background-color: var(--second-white);
+    padding: 25px 102px;
+    border-radius: 4px;
+}
+.sm-icon {
+    width: 20px;
+    height: 17px;
+    fill: var(--icon);
+    padding: 12px;
+    border-radius: 50%;
+    border: 0;
+}
 
-
-
-
-
-
+.sm-icon-nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+.link-icon:hover {
+    fill: var(--main-blue);
+}
+.sm-icon:hover {
+    fill: var(--main-white);
+    background-color: var(--main-blue);
+}
+.team-profil {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.clients {
+    display: flex;
+    justify-content: space-evenly;
+}
+.client-icon {
+    padding: 16px 32px;
+    width: 106px;
+    height: 60px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
 
 
 
