@@ -204,12 +204,36 @@ a:hover {
     flex-direction: column;
     align-items: center;
     padding: 200px 0 280px 0;
-    background-color: var(--background-grey);
+
     color: var(--main-white);
 }
 .order-list {
+    display: flex;
+    justify-content: center;
     background-image: url(../images/Img-background.jpg) ;
+    max-width: 1600px;
+    background-color: var(--background-grey);
+
 }
+.client-link:hover {
+    color: var(--color3, #2196f3);
+}
+.container-order-list {
+    display: flex;
+    justify-content: center;
+    width: 1600px;
+    margin: 0 auto;
+
+}
+.gradient-order-list {
+    background-image: radial-gradient(
+        elipse at center,
+        #12121366 51%,
+        #17171a66 51%,
+    );
+}
+
+
 
 /* LOREM ON MAIN PAGE */
 
