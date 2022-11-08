@@ -76,10 +76,21 @@ a:hover {
     display: flex;
     gap: 50px;
 }
+
 /* ICON HEADER */
 
-.mail-icon::after {
-    background-image: url('../images/icons.svg/mail-svgrepo-com.svg');
+.tel-icon-style {
+    height: 12px;
+    width: 16px;
+}
+
+
+.mail-icon-style {
+    height: 12px;
+    width: 16px;
+}
+.mail-icon-style:hover {
+    fill: var(--main-blue);
 }
 
 /* HEADER LINE BORDER */
